@@ -1,0 +1,134 @@
+main {
+  max-width: 1440px;
+  height: 98vh;
+  position: relative;
+  margin: 0 auto;
+  background-color: var(--light-pink);
+}
+
+.pattern-bg {
+  background-image: url("../assets/images/background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 320px;
+}
+
+.card {
+  margin: 0 auto;
+  top: 167px;
+  position: relative;
+  width: 600px;
+  height: auto;
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 40px 40px 15px;
+  box-shadow: 15px 13px 51px -23px hsl(292, 16%, 49%);
+}
+
+.faqs-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.faqs {
+  font-weight: 700;
+  font-size: 56px;
+  margin-left: 25px;
+  color: var(--dark-purple);
+}
+
+.faq-item {
+  height: auto;
+  margin-bottom: 21px;
+}
+
+.accordion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+}
+
+.icon-container {
+  width: 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.question {
+  color: var(--dark-purple);
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.question:hover {
+  color: hsl(281, 83%, 54%);
+}
+
+.answer {
+  color: var(--grayish-purple);
+  line-height: 1.5em;
+  padding: 22px 0 2px;
+}
+
+hr {
+  border: 1px solid var(--light-pink);
+  margin-top: 21px;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    max-width: 375px;
+    height: 98vh;
+  }
+
+  .pattern-bg {
+    background-image: url("../assets/images/background-pattern-mobile.svg");
+    height: 230px;
+  }
+
+  .card {
+    top: 140px;
+    width: 325px;
+    border-radius: 10px;
+    padding: 25px 23px 7px 23px;
+  }
+
+  .faqs-container {
+    margin-bottom: 25px;
+  }
+
+  .icon-star {
+    width: 25px;
+  }
+
+  .faqs {
+    font-size: 31.5px;
+    margin-left: 24px;
+  }
+
+  .faq-item {
+    margin-bottom: 17px;
+  }
+
+  .icon-container {
+    width: 75px;
+  }
+
+  .question {
+    font-size: 16px;
+  }
+
+  .answer {
+    font-size: 14px;
+    padding: 25px 0 2px;
+  }
+
+  hr {
+    margin-top: 19px;
+  }
+}
