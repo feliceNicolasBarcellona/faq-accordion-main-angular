@@ -14,18 +14,6 @@ main {
   height: 320px;
 }
 
-.card {
-  margin: 0 auto;
-  top: 167px;
-  position: relative;
-  width: 600px;
-  height: auto;
-  background-color: var(--white);
-  border-radius: 15px;
-  padding: 40px 40px 15px;
-  box-shadow: 15px 13px 51px -23px hsl(292, 16%, 49%);
-}
-
 .faqs-container {
   display: flex;
   align-items: center;
@@ -86,13 +74,6 @@ main {
     height: 230px;
   }
 
-  .card {
-    top: 140px;
-    width: 325px;
-    border-radius: 10px;
-    padding: 25px 23px 7px 23px;
-  }
-
   .faqs-container {
     margin-bottom: 25px;
   }
@@ -111,7 +92,7 @@ main {
   }
 
   .icon-container {
-    width: 75px;
+    width: 80px;
   }
 
   .question {

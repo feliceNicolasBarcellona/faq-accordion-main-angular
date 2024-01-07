@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { SeparatorComponent } from './shared/separator/separator.component';
+import { CardComponent } from './shared/card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SeparatorComponent
+    SeparatorComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule
