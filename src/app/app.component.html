@@ -2,36 +2,11 @@
   <div class="pattern-bg">
     <app-card>
       <div class="faqs-container">
-        <img
-          class="icon-star"
-          src="../assets/images/icon-star.svg"
-          alt="icon-star"
-        />
+        <img class="icon-star" src="../assets/images/icon-star.svg" alt="icon-star"/>
         <p class="faqs">FAQs</p>
       </div>
-      <div *ngFor="let item of faqItem; let last = last; let i = index">
-        <div class="faq-item" (click)="toggleAccordion(i)">
-          <div class="accordion">
-            <p class="question">
-              {{ item.question }}
-            </p>
-            <div class="icon-container">
-              <span *ngIf="clickedIndex !== i"
-                ><img src="../assets/images/icon-plus.svg" alt="icon-plus"
-              /></span>
-              <span *ngIf="clickedIndex === i"
-                ><img src="../assets/images/icon-minus.svg" alt="icon-minus"
-              /></span>
-            </div>
-          </div>
-          <p class="answer" *ngIf="clickedIndex === i">
-            {{ item.answer }}
-          </p>
-          <app-separator *ngIf="!last"></app-separator>
-        </div>
-      </div>
+      <app-accordion [faqItem]="faqItem"></app-accordion>
     </app-card>
-
   </div>
 </main>
 <footer class="attribution">

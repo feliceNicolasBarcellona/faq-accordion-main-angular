@@ -1,0 +1,21 @@
+<div *ngFor="let item of faqItem; let last = last; let i = index">
+  <div class="faq-item" (click)="toggleAccordion(i)">
+    <div class="accordion">
+      <p class="question">
+        {{ item.question }}
+      </p>
+      <div class="icon-container">
+        <span *ngIf="clickedIndex !== i"
+          ><img src="../assets/images/icon-plus.svg" alt="icon-plus"
+        /></span>
+        <span *ngIf="clickedIndex === i"
+          ><img src="../assets/images/icon-minus.svg" alt="icon-minus"
+        /></span>
+      </div>
+    </div>
+    <p class="answer" *ngIf="clickedIndex === i">
+      {{ item.answer }}
+    </p>
+    <app-separator *ngIf="!last"></app-separator>
+  </div>
+</div>
