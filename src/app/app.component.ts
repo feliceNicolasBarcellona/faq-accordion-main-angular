@@ -20,7 +20,5 @@ export class AppComponent {
 
   toggleAccordion(index: number): void {
     this.clickedIndex = this.clickedIndex === index ? null : index;
-    console.log(this.clickedIndex);
-
   }
 }

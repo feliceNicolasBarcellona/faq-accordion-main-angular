@@ -27,7 +27,7 @@
           <p class="answer" *ngIf="clickedIndex === i">
             {{ item.answer }}
           </p>
-          <hr *ngIf="!last" />
+          <app-separator *ngIf="!last"></app-separator>
         </div>
       </div>
     </div>
